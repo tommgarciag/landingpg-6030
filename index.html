@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A6013 - Marketing y Comunicacíon</title>
+    <title>A6013 - Marketing y Comunicación</title>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <main>
@@ -25,14 +25,18 @@
             <section>
                 <h1>Potencía tu negocio en las redes sociales</h1>
                 <p>En Agencia Sesenta Trece trabajamos para posicionar tu negocio en las redes sociales, generar contenido de calidad para tu empresa o emprendimiento. Te asesoramos para que vos y tu negocio aprovechen las ventajas de la era digital.</p>
-                <p>Dejános tu email y nosotros nos contactamos.</p>
-                <form>
-                    <input type="emial" placeholder="email@ejemplo.com">
-                    <button>Bienvenido a la era digital</button>
+                
+                <form id="form" action="#">
+                    <label>Dejános tu email y nosotros nos contactamos.</label>
+                    <input type="email" placeholder="email@ejemplo.com" id="address" name="email">                    
+                    <small id="msg" name='error'></small> <!-- id="msg" -->
+                    <button type="submit" id="btn">Bienvenido a la era digital</button>
                 </form>
             </section>
+            <div id="redirect-msg"></div>
         </div>
     </main>
-    
+    <script type="text/javascript" src="app.js"></script>
+    <!-- <script type="text/javascript" src="validation.js"></script> -->
 </body>
 </html>

@@ -41,22 +41,28 @@ li:last-child {
     margin-left: 1rem;
 }
 
-h1 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
 img {
     max-width: 100%;
+}
+
+section {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+section p {
+    margin-top: 1rem;
 }
 
 form {
     display: flex;
     flex-flow: column wrap;
-    padding: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 0.8rem;     
 }
 
 input, button {
@@ -75,3 +81,9 @@ button {
     box-shadow: 2px 4px 5px #444444;
 }
 
+/* validation msg */
+
+small {    
+    font-size: 0.7rem;    
+    margin: 0 0.4rem;    
+}
